@@ -1,0 +1,11 @@
+{
+  "name": "beer_review",
+  "version": "1.0.0",
+  "description": "Review site for beer",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tim Smith",
+  "license": "ISC"
+}

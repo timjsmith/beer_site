@@ -1,11 +1,17 @@
 const express         = require("express"),
       app             = express(),
       bodyParser      = require("body-parser")
-      methodOverride  = require("method-override");
+      methodOverride  = require("method-override"),
+      mongoose        = require("mongoose"),
+      env             = require('dotenv').config();
 
 //routes
 let indexRoutes = require("./routes/index");
 let beerRoutes = require("./routes/beer");
+
+//connect to database
+const db = process.env.DATABASE;
+mongoose.connect(db);
 
 //app configuration
 app.use(bodyParser.urlencoded({extended: true}));

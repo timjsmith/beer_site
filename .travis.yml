@@ -2,3 +2,6 @@ language: node_js
 node_js:
   - "v7.9.0"
 script: "npm run-script pipeline"
+ notifications:
+  email: false
+  slack: dover-boys:pCrb0pEkAvoZ26CQq6czfs8J

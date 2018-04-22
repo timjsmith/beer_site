@@ -4,7 +4,7 @@
   "description": "Review site for beer",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0",
+    "test": "jest",
     "lint": "./node_modules/.bin/eslint app.js",
     "pipeline": "npm run-script lint"
   },
@@ -22,6 +22,7 @@
   "devDependencies": {
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.11.0"
+    "eslint-plugin-import": "^2.11.0",
+    "jest": "^22.4.3"
   }
 }

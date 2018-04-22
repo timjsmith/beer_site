@@ -4,7 +4,9 @@
   "description": "Review site for beer",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "./node_modules/.bin/eslint server/**/*.js src/**/*.js",
+    "pipeline": "npm lint"
   },
   "author": "Tim Smith",
   "license": "ISC",
@@ -16,5 +18,10 @@
     "method-override": "^2.3.10",
     "mongoose": "^5.0.11",
     "nodemon": "^1.17.2"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.11.0"
   }
 }
